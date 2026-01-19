@@ -9,5 +9,11 @@ jobs:
     runs-on: ubuntu-latest
 
     steps:
-      - name: Print hi
-        run: echo "hi"
+      - name: show files
+        run: ls -la
+
+      - name: checkout
+        uses: action/checkout@6.0.2
+
+      - name: check checkout
+        run: ls -la
