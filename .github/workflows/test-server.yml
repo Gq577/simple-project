@@ -5,7 +5,7 @@ on:
     paths:
       - "src/**"
 jobs:
-  test:
+  test-server:
     runs-on: ubuntu_latest
     steps:
     - name: "checkout"
