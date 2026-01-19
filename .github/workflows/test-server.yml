@@ -1,3 +1,5 @@
+name: pipe-line-one
+
 on:
   push:
     branches:
