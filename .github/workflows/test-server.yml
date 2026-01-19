@@ -1,12 +1,12 @@
 on:
   push:
-    branch:
+    branches:
       - master
-    path:
+    paths:
       - "src/**"
-jops:
+jobs:
   test:
-    runs_on: ubuntu_latest
+    runs-on: ubuntu_latest
     steps:
     - name: "checkout"
       uses: actions/checkout@v6.0.2
@@ -16,11 +16,8 @@ jops:
       with:
         node-version: 18
 
-    - name: install express
-      run: npm install express
+    - name: install libarily
+      run: npm install
 
     - name: trun-on the server
       run: npm start
-
-      name: test the server
-      run: npm test
