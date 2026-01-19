@@ -3,7 +3,7 @@ name: my first script
 on:
   push:
     branches:
-      - main
+      - master
 jobs:
   example:
     runs-on: ubuntu-latest
