@@ -1,0 +1,26 @@
+on:
+  push:
+    branch:
+      - master
+    path:
+      - "src/**"
+jops:
+  test:
+    runs_on: ubuntu_latest
+    steps:
+    - name: "checkout"
+      uses: actions/checkout@v6.0.2
+    
+    - name: Setup Node.js
+      uses: actions/setup-node@v4
+      with:
+        node-version: 18
+
+    - name: install express
+      run: npm install express
+
+    - name: trun-on the server
+      run: npm start
+
+      name: test the server
+      run: npm test
