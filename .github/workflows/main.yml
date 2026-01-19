@@ -1,0 +1,13 @@
+name: my first script
+
+on:
+  push:
+    branches:
+      - main
+jobs:
+  example:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Print hi
+        run: echo "hi"
