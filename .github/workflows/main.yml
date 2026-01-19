@@ -13,7 +13,7 @@ jobs:
         run: ls -la
 
       - name: checkout
-        uses: action/checkout@6.0.2
+        uses: actions/checkout@6.0.2
 
       - name: check checkout
         run: ls -la
