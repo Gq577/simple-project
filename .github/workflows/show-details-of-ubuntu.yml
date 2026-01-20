@@ -22,6 +22,15 @@ jobs:
        
       - name: show desk details
         run: df -h
+
+      - name: install htop
+        run: apk install htop
+
+      - name: show from htop
+        run: htop
+
+      - name : show the varibalis
+        run: echo "hi $(( inputs.x ))
     
         
           
