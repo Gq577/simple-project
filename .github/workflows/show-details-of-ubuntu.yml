@@ -24,7 +24,7 @@ jobs:
         run: df -h
 
       - name: install htop
-        run: apk install htop
+        run: apt install htop
 
       - name: show from htop
         run: htop
