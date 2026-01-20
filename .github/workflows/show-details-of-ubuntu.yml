@@ -1,0 +1,27 @@
+on: 
+  workflow_dispatch:
+    inputs:
+      x:
+        description: "chose one"
+        required: true
+        type: choice
+        options:
+          - develop
+          - prodaction
+jobs:
+  deploy:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: know cpu type
+        run: lscpu
+
+      - name: show ram details
+        run: free -h
+
+       
+      - name: show desk details
+        run: df -h
+    
+        
+          
