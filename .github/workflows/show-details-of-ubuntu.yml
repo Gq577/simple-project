@@ -24,7 +24,7 @@ jobs:
         run: df -h
 
       - name: install htop
-        run: apt install htop
+        run: sudo apt install -y htop
 
       - name: show from htop
         run: htop
