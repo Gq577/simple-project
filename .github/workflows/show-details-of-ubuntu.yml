@@ -27,7 +27,7 @@ jobs:
         run: sudo apt install -y htop
 
       - name : show the varibalis
-        run: echo "hi $(( inputs.x ))
+        run: echo "hi ${{ inputs.x }}"
     
         
           
