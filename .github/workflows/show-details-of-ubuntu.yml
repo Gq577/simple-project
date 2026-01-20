@@ -26,9 +26,6 @@ jobs:
       - name: install htop
         run: sudo apt install -y htop
 
-      - name: show from htop
-        run: htop
-
       - name : show the varibalis
         run: echo "hi $(( inputs.x ))
     
