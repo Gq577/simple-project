@@ -16,5 +16,5 @@ jobs:
         run: speedtest
 
       - name: ping
-        run: timeout 10 ping 8.8.8.8
+        run: timeout 3 ping 8.8.8.8
   
