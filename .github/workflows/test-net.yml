@@ -1,0 +1,19 @@
+name: speednet
+on:
+  push:
+    branches: 
+      - master
+
+jobs:
+  try-test-net:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: download speedtest-cli
+        run: sudo apt install speedtest-cli
+
+      - name: run speedtest-cli
+        run: speedtest
+
+  
+  
