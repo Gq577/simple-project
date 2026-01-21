@@ -1,0 +1,11 @@
+name: api
+on:
+  repository_dispatch: 
+    types: [any_thing]
+
+jobs:
+  try-by-api:
+    runs-on: ubuntu-latest
+    steps:
+      - name: try run curl
+        run: curl https://googel.com
