@@ -1,0 +1,25 @@
+name: sequens
+on: 
+  workflow_dispatch:
+
+
+jobs:
+  sequens:
+    runs-on: ubuntu-latest
+    steps:
+       - name: first
+         run: echo 1
+
+  sequens-2:
+    needs: sequens
+    runs-on: ubuntu-latest
+    steps:
+       - name: secend
+         run: echo 2
+
+  sequens-3:
+    needs: [sequens,sequens-2]
+    runs-on: ubuntu-latest
+    steps:
+      - name: thrind
+        run: echo 3 
